@@ -4,6 +4,7 @@
       'target_name': 'libwebsockets',
       'type': 'static_library',
       'dependencies': [
+        '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
         '<(peeracle_webrtc_root)/chromium/src/third_party/boringssl/boringssl.gyp:boringssl'
       ],
       'include_dirs': [
@@ -36,6 +37,12 @@
           'sources': [
             'lib/lws-plat-win.c',
           ],
+          'msvs_settings': {
+            'VCCLCompilerTool': {
+              'WarnAsError': 'true',
+              'DisableSpecificWarnings': ['4018']
+            }
+          }
         }, {
           'sources': [
             'lib/lws-plat-unix.c',
