@@ -32,7 +32,7 @@
 /* #undef LWS_USE_LIBEV */
 
 /* Build with support for ipv6 */
-/* #undef LWS_USE_IPV6 */
+#define LWS_USE_IPV6
 
 /* Build with support for HTTP2 */
 /* #undef LWS_USE_HTTP2 */
