@@ -3,6 +3,7 @@
     {
       'target_name': 'libwebsockets',
       'type': 'static_library',
+      'standalone_static_library': 1,
       'dependencies': [
         '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
         '<(peeracle_webrtc_root)/chromium/src/third_party/boringssl/boringssl.gyp:boringssl'
