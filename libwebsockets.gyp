@@ -9,12 +9,10 @@
         '<(peeracle_webrtc_root)/chromium/src/third_party/boringssl/boringssl.gyp:boringssl'
       ],
       'include_dirs': [
-        '.',
         'config/<(OS)/<(target_arch)',
       ],
       'direct_dependent_settings': {
         'include_dirs': [
-          '.',
           'config/<(OS)/<(target_arch)',
         ],
       },
