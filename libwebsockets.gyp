@@ -28,7 +28,7 @@
       ],
       'dependencies': [
         '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
-        '<(peeracle_webrtc_root)/chromium/src/third_party/boringssl/boringssl.gyp:boringssl'
+        '<(peeracle_webrtc_root)/third_party/boringssl/boringssl.gyp:boringssl'
       ],
       'include_dirs': [
         'config/<(OS)/<(target_arch)',
