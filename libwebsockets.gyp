@@ -4,18 +4,6 @@
       'target_name': 'libwebsockets',
       'type': 'static_library',
       'standalone_static_library': 1,
-      'dependencies': [
-        '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
-        '<(peeracle_webrtc_root)/chromium/src/third_party/boringssl/boringssl.gyp:boringssl'
-      ],
-      'include_dirs': [
-        'config/<(OS)/<(target_arch)',
-      ],
-      'direct_dependent_settings': {
-        'include_dirs': [
-          'config/<(OS)/<(target_arch)',
-        ],
-      },
       'sources': [
         'lib/base64-decode.c',
         'lib/handshake.c',
@@ -38,6 +26,18 @@
         'lib/extension-deflate-frame.c',
         'lib/extension-deflate-stream.c',
       ],
+      'dependencies': [
+        '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
+        '<(peeracle_webrtc_root)/chromium/src/third_party/boringssl/boringssl.gyp:boringssl'
+      ],
+      'include_dirs': [
+        'config/<(OS)/<(target_arch)',
+      ],
+      'direct_dependent_settings': {
+        'include_dirs': [
+          'config/<(OS)/<(target_arch)',
+        ],
+      },
       'conditions': [
         ['OS == "win"', {
           'sources': [
