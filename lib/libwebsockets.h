@@ -92,9 +92,9 @@ extern "C" {
 
 #ifdef LWS_OPENSSL_SUPPORT
 #ifdef USE_CYASSL
-#include <cyassl/openssl/ssl.h>
+#include "cyassl/openssl/ssl.h"
 #else
-#include <openssl/ssl.h>
+#include "openssl/ssl.h"
 #endif /* not USE_CYASSL */
 #endif
 
