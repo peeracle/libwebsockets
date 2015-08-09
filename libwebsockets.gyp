@@ -28,7 +28,7 @@
       ],
       'dependencies': [
         '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
-        '<(webrtc_depot_dir)/third_party/boringssl/boringssl.gyp:boringssl'
+        '<(webrtc_depth)/third_party/boringssl/boringssl.gyp:boringssl'
       ],
       'include_dirs': [
         'config/<(OS)/<(target_arch)',
