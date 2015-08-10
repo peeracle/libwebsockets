@@ -27,7 +27,7 @@
         'lib/extension-deflate-stream.c',
       ],
       'dependencies': [
-        '<(DEPTH)/third_party/zlib/zlib.gyp:zlib',
+        '<(webrtc_depth)/third_party/zlib/zlib.gyp:zlib',
         '<(webrtc_depth)/third_party/boringssl/boringssl.gyp:boringssl'
       ],
       'include_dirs': [
