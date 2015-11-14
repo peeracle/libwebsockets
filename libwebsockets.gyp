@@ -46,7 +46,7 @@
           'msvs_settings': {
             'VCCLCompilerTool': {
               'WarnAsError': 'true',
-              'DisableSpecificWarnings': ['4018']
+              'DisableSpecificWarnings': ['4018', '4267', '4101']
             }
           }
         }, {
