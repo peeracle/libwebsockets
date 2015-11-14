@@ -75,7 +75,9 @@ LWS_VISIBLE struct libwebsocket_context *
 libwebsocket_create_context(struct lws_context_creation_info *info)
 {
 	struct libwebsocket_context *context = NULL;
+#ifdef HAVE_GETENV
 	char *p;
+#endif
 #ifdef _WIN32
 	int i;
 #endif
